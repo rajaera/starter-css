@@ -5,4 +5,33 @@ Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
 
+/*
+*universal selector to simply reset the all super level css styles
+select each and every elecment and apply these declaration on them
 */
+* {
+    /* Override the default magin and padding for elements which are set by browser */
+    margin: 0;
+    padding: 0;
+    /* getting rid of adding the borders and padding for elements to the total width and height*/
+    box-sizing: border-box;
+}
+
+/*
+* set other overall properties for the elements
+*/
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+}
+
+.header {
+    /*view port height for responsive web pages*/
+    height: 95vh;
+    background-image: url(../img/hero.jpg);
+    background-size: cover; /* cover the whole background*/   
+    background-position: top; 
+}
